@@ -1,5 +1,5 @@
 # SimpleCabinetPublicDocs
-Документация к SimpleCabinet  
+Документация к SimpleCabinet. Все компоненты SImpleCabinet после релиза будут доступны под лицензией MIT с открытым исходным кодом  
 **SimpleCabinet еще не вышел в релиз, получить файлы сборки могут только бета тестеры, ссылки на репозитории до релиза могут не работать**
 # Структура проекта
 - [SimpleCabinetBackend](https://github.com/SimpleCabinet/SimpleCabinetBackend) - модуль для лаунчсервера, отвечающий за соеденение с базой данных и обработку всех запросов личного кабинета
@@ -8,6 +8,14 @@
 - [JavaScriptLauncherAPI](https://github.com/GravitLauncher/JavaScriptLauncherAPI) -  библиотека для работы с websocket API лаунчсервера из JavaScript
 - [SpongeIntegrationPlugin](https://github.com/SimpleCabinet/SpongeIntegrationPlugin) - плагин для Sponge, отвечающий за выдачу предметов в магазине и команду `/cart`
 - [BukkitIntegrationPlugin](https://github.com/SimpleCabinet/BukkitIntegrationPlugin) - плагин для Bukkit, отвечающий за выдачу предметов в магазине и команду `/cart`
+# Требования
+- Nginx для раздачи файлов
+- GravitLauncher 5.1.9 и выше
+- Рекомендуемые базы данных: PostgreSQL 11 и выше, MariaDB(форк MySQL) 10.3 и выше, при невозможности установки MariaDB - MySQL
+- Прочие поддерживаемые базы данных: MS SQL, Oracle и другие
+- Миграция: любая CMS с базой данных MySQL/MariaDB и одним из поддержиываемых алгоритмов хеширования пароля: BCRYPT, DOUBLEMD5, MD5, SHA256, AUTHMESHA256, PHPASS. Миграция возможна на любую из поддерживаемых БД
+- Выдача привилегий: LuckPerms
+- Выдача предметов: сервер на Sponge или Bukkit
 # Установка
 - Скачайте модуль SimpleCabinetBackend вместе с библиотеками  
 Распакуйте библиотеки в libraries лаунчсервера, файл модуля в папку modules  
