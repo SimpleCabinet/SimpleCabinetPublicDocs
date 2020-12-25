@@ -1,6 +1,5 @@
 # SimpleCabinetPublicDocs
 Документация к SimpleCabinet. Все компоненты SImpleCabinet после релиза будут доступны под лицензией MIT с открытым исходным кодом  
-**SimpleCabinet еще не вышел в релиз, получить файлы сборки могут только бета тестеры, ссылки на репозитории до релиза могут не работать**
 # Структура проекта
 - [SimpleCabinetBackend](https://github.com/SimpleCabinet/SimpleCabinetBackend) - модуль для лаунчсервера, отвечающий за соеденение с базой данных и обработку всех запросов личного кабинета
 - [SimpleCabinetFrontend](https://github.com/SimpleCabinet/SimpleCabinetFrontend) - веб интерфейс на Vue.js и bootstrap-vue, отвечающий за взаимодействие с пользователем.  
