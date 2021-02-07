@@ -4,7 +4,6 @@
 - [SimpleCabinetBackend](https://github.com/SimpleCabinet/SimpleCabinetBackend) - модуль для лаунчсервера, отвечающий за соеденение с базой данных и обработку всех запросов личного кабинета
 - [SimpleCabinetFrontend](https://github.com/SimpleCabinet/SimpleCabinetFrontend) - веб интерфейс на Vue.js и bootstrap-vue, отвечающий за взаимодействие с пользователем.  
 После сборки является html/js/css SPA страницей. PHP не требуется, веб интерфейс подключается напрямую к лаунчсерверу по websocket
-- [JavaScriptLauncherAPI](https://github.com/GravitLauncher/JavaScriptLauncherAPI) -  библиотека для работы с websocket API лаунчсервера из JavaScript
 - [SpongeIntegrationPlugin](https://github.com/SimpleCabinet/SpongeIntegrationPlugin) - плагин для Sponge, отвечающий за выдачу предметов в магазине и команду `/cart`
 - [BukkitIntegrationPlugin](https://github.com/SimpleCabinet/BukkitIntegrationPlugin) - плагин для Bukkit, отвечающий за выдачу предметов в магазине и команду `/cart`
 # Требования
