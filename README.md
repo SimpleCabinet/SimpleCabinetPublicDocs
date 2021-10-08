@@ -7,6 +7,7 @@
 # Структура проекта
 - [SimpleCabinetWebAPI](https://github.com/SimpleCabinet/SimpleCabinetWebAPI) - Основной бекенд SimpleCabinet. Занимается подключением к базе данных и обработкой всех запросов по HTTP API
 - [SimpleCabinetModule](https://github.com/SimpleCabinet/SimpleCabinetModule) - Модуль для лаунчсервера, предоставляющий SimpleCabinetAuthCoreProvider
+- [SimpleCabinetBukkitPlugin](https://github.com/SimpleCabinet/SimpleCabinetBukkitPlugin) - Плагин Bukkit 1.7 - 1.17+, добавляющий команды `/shop` и `/economy` для получения предметов и торговли
 - **Все остальные части SimpleCabinet 2 находятся на ранних стадиях разработки**
 # Требования
 - Nginx для раздачи файлов
@@ -51,7 +52,7 @@ host    all             all             ::1/128                 trust
 - Выполните команду начальной настройки: `curl http://localhost:PORT/setup > setup.json`. Эта команда создаст пользователя admin с случайным паролем и вечный токен(adminJwtToken) который понадобится для привязки лаунчсервера и серверов к SimpleCabinet
 # Установка - Часть 2: Module
 - Скачайте модуль для лаунчсервера `SimpleCabinetModule.jar` и положите его в папку modules лаунчсервера
-- Выполните `cabinet install`. Вас попросят указать url кабинета и токен доступа, полученный на предыдущем этапе. Команда установки проверит правильность указанных данных и **заменит** ваш старый AuthCoreProvider новым
+- Выполните `cabinet install URL TOKEN`. Где URL - адрес кабинета, а TOKEN - токен доступа, полученный на предыдущем этапе. Команда установки проверит правильность указанных данных и **заменит** ваш старый AuthCoreProvider новым
 # Установка - Часть 3: Frontend
 **Этот раздел еще не готов**
 # Установка - Часть 4: Nginx
