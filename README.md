@@ -1,7 +1,7 @@
 # SimpleCabinetPublicDocs
 Документация к SimpleCabinet 2. Все компоненты SimpleCabinet после релиза будут доступны под лицензией MIT с открытым исходным кодом  
-**Первая стадия релиза**: Релиз SimpleCabinetWebAPI и SimpleCabinetModule  
-**Вторая стадия релиза**: Релиз плагинов для Bukkit и Sponge  
+**Первая стадия релиза**: Релиз SimpleCabinetWebAPI, SimpleCabinetModule и плагина Bukkit  
+**Вторая стадия релиза**: Релиз плагина для Sponge  
 **Третья стадия релиза**: Релиз mini версии frontend части, реализующий минимальный функционал  
 **Четвертая стадия релиза**: Релиз полной версии frontend части  
 # Структура проекта
@@ -11,7 +11,7 @@
 - **Все остальные части SimpleCabinet 2 находятся на ранних стадиях разработки**
 # Требования
 - Nginx для раздачи файлов
-- GravitLauncher 5.2.3 и выше
+- GravitLauncher 5.2.5 и выше
 - Java 17 и выше
 - PostgreSQL в качестве основной базы данных
 - Миграция: любая CMS с базой данных MySQL/MariaDB и одним из поддержиываемых алгоритмов хеширования пароля: BCRYPT, DOUBLEMD5, MD5, SHA256, AUTHMESHA256, PHPASS
