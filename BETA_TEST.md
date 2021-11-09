@@ -1,0 +1,22 @@
+# Публичный бета тест SimpleCabinet 2 (API)
+Первые 3 части Simple Cabinet 2 вышли в релиз. В этой инструкции вы найдете ответы на вопросы по бета-тесту
+#### Тестирование
+- Следуйте инструкции по установке(1 и 2 часть)
+- Откройте домен или порт SimpleCabinetWebAPI в браузере, откройте консоль разработчика и выполните в браузере запрос register по документации [Авторизация](https://github.com/SimpleCabinet/SimpleCabinetWebAPI/blob/main/API_DOCS.md#%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
+- Авторизируйтесь в браузере для дальнейшего тестирования, вставив и выполнив в браузере запрос authorize [Авторизация](https://github.com/SimpleCabinet/SimpleCabinetWebAPI/blob/main/API_DOCS.md#%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
+- Установите плагин Bukkit на тестовый сервер по инструкции, а так же все интересующие вас плагины
+- Подключите LuckPerms к базе данных SimpleCabinet 2
+- Создайте тестовую группу с помощью запросов из раздела [Магазин привилегий](https://github.com/SimpleCabinet/SimpleCabinetWebAPI/blob/main/API_DOCS.md#%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F)
+- Купите тестовую группу и убедитесь, что покупка выдана корректно
+- Создайте тестовый блок с помощью запросов из раздела [Магазин блоков](https://github.com/SimpleCabinet/SimpleCabinetWebAPI/blob/main/API_DOCS.md#%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2)
+- Купите тестовый блок и попробуйте его получить на сервере с помощью команды `/shop all`
+- Выдайте себе монеты на счет с помощью запросов из раздела [Администрирование: Экономика](https://github.com/SimpleCabinet/SimpleCabinetWebAPI/blob/main/API_DOCS.md#%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0)
+- Создайте еще один аккаунт и переведите на счет, к примеру, 100 монет через плагин и через личный кабинет [Личный кабинет: Экономика](https://github.com/SimpleCabinet/SimpleCabinetWebAPI/blob/main/API_DOCS.md#%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82-%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0)
+- Убедитесь что транзакции видны в личном кабинете и счет обновился корректно
+- И так далее
+#### Как сообщить о багах
+- Если вы уверены в том, что наблюдаемое поведение баг и вы готовы подробно расписать как этот баг воспроизвести вы можете сразу создать Issue в соответствующем репозитории
+- Если вы не уверены, или вам нужна помощь в исследовании бага обратитесь в Discord GravitLauncher с упоминанием меня(Gravita)
+#### Frontend
+Пока оффициальный frontend для SimpleCabinet 2 в разработке вы можете написать или заказать рабоработку своего frontend'а по [открытой документации](https://github.com/SimpleCabinet/SimpleCabinetWebAPI/blob/main/API_DOCS.md)  
+Если при разработке возникли какие то проблемы, связанные с недостаточной гибкостью API сообщите об этом мне в Discord(Gravita)
