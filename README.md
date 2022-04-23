@@ -8,10 +8,11 @@
 - [SimpleCabinetWebAPI](https://github.com/SimpleCabinet/SimpleCabinetWebAPI) - Основной бекенд SimpleCabinet. Занимается подключением к базе данных и обработкой всех запросов по HTTP API
 - [SimpleCabinetModule](https://github.com/SimpleCabinet/SimpleCabinetModule) - Модуль для лаунчсервера, предоставляющий SimpleCabinetAuthCoreProvider
 - [SimpleCabinetBukkitPlugin](https://github.com/SimpleCabinet/SimpleCabinetBukkitPlugin) - Плагин Bukkit 1.7 - 1.17+, добавляющий команды `/shop` и `/economy` для получения предметов и торговли
+- [SimpleCabinetFrontend2](https://github.com/SimpleCabinet/SimpleCabinetFrontend2) - фронтенд часть SimpleCabinet 2
 - **Все остальные части SimpleCabinet 2 находятся на ранних стадиях разработки**
 # Требования
 - Nginx для раздачи файлов
-- GravitLauncher 5.2.5 и выше
+- GravitLauncher 5.2.11 и выше
 - Java 17 и выше
 - PostgreSQL в качестве основной базы данных
 - Миграция: любая CMS с базой данных MySQL/MariaDB и одним из поддержиываемых алгоритмов хеширования пароля: BCRYPT, DOUBLEMD5, MD5, SHA256, AUTHMESHA256, PHPASS
@@ -54,7 +55,8 @@ host    all             all             ::1/128                 trust
 - Скачайте модуль для лаунчсервера `SimpleCabinetModule.jar` и положите его в папку modules лаунчсервера
 - Выполните `cabinet install URL TOKEN`. Где URL - адрес кабинета, а TOKEN - токен доступа, полученный на предыдущем этапе. Команда установки проверит правильность указанных данных и **заменит** ваш старый AuthCoreProvider новым
 # Установка - Часть 3: Frontend
-**Этот раздел еще не готов**
+- Клонируйте репозиторий фронтенд-части Simple Cabinet 2в любую удобную для вас папку
+- Отредактируйте файл `.env` указав в качестве URL внешний адрес WebAPI кабинета
 # Установка - Часть 4: Nginx
 **Этот раздел еще не готов**
 # Функции SimpleCabinet 2
