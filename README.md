@@ -57,7 +57,8 @@ host    all             all             ::1/128                 trust
 # Установка - Часть 3: Frontend
 - Клонируйте репозиторий фронтенд-части Simple Cabinet 2в любую удобную для вас папку
 - Отредактируйте файл `.env` указав в качестве URL внешний адрес WebAPI кабинета
-- Установите quasar-cli по [инструкции](https://quasar.dev/start/quasar-cli)
+- Установите `yarn`
+- Установите quasar-cli командой `yarn global add @quasar/cli`
 - Соберите проект командой `quasar build`
 # Установка - Часть 4: Nginx
 **Этот раздел еще не готов**
