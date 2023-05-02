@@ -55,13 +55,46 @@ host    all             all             ::1/128                 trust
 - Скачайте модуль для лаунчсервера `SimpleCabinetModule.jar` и положите его в папку modules лаунчсервера
 - Выполните `cabinet install URL TOKEN`. Где URL - адрес кабинета, а TOKEN - токен доступа, полученный на предыдущем этапе. Команда установки проверит правильность указанных данных и **заменит** ваш старый AuthCoreProvider новым
 # Установка - Часть 3: Frontend
-- Клонируйте репозиторий фронтенд-части Simple Cabinet 2в любую удобную для вас папку
+- Клонируйте репозиторий фронтенд-части Simple Cabinet 2 в `/home/cabinet/frontend`
 - Скопируйте файл `.env.example` в `.env` и настройте его указав в качестве URL внешний адрес WebAPI кабинета
 - Установите `yarn`
+*В некоторых системак пакет и команда называются yarnpkg*
 - Установите quasar-cli командой `yarn global add @quasar/cli`
 - Соберите проект командой `quasar build`
 # Установка - Часть 4: Nginx
-**Этот раздел еще не готов**
+Настройте nginx:
+```nginx
+server {
+        listen       80;
+        server_name  YOUR_DOMAIN;
+        charset utf-8;
+
+        location / {
+                root FRONTEND_BUILD_DIR;
+                try_files $uri $uri/ /index.html;
+        }
+        location /skins/ {
+                alias SKIN_DIR;
+                try_files $uri $uri/ =404;
+        }
+        location /api/ {
+                proxy_pass http://localhost:8080/;
+                proxy_set_header Host $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Real-IP $remote_addr;
+        }
+}
+```
+Измените этот конфиг под себя
+- YOUR_DOMAIN - ваш домен
+- FROUNTEND_BUILD_DIR - папка с собранными HTML/CSS/JS файлами после выполнения `quasar build`. Находится в `/home/cabinet/frontend/dist/spa`
+- SKIN_SIR - папка, куда будут складыватся скины и плащи при загрузке. По умолчанию это `/home/cabinet/assets`
+Исправьте права файлов для правильной работы nginx:
+```bash
+chmod +x /home/cabinet &&
+find /home/cabinet/updates -type d -exec chmod 755 {} \; &&
+find /home/cabinet/updates -type f -exec chmod 644 {} \;
+```
 # Функции SimpleCabinet 2
 В данном разделе перечислены функции, которые **будут доступны при релизе web части**
 ### Авторизация
