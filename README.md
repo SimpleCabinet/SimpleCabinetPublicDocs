@@ -92,8 +92,10 @@ server {
 Исправьте права файлов для правильной работы nginx:
 ```bash
 chmod +x /home/cabinet &&
-find /home/cabinet/updates -type d -exec chmod 755 {} \; &&
-find /home/cabinet/updates -type f -exec chmod 644 {} \;
+find /home/cabinet/frontend -type d -exec chmod 755 {} \; &&
+find /home/cabinet/frontend -type f -exec chmod 644 {} \; &&
+find /home/cabinet/assets -type d -exec chmod 755 {} \; &&
+find /home/cabinet/assets -type f -exec chmod 644 {} \;
 ```
 # Функции SimpleCabinet 2
 В данном разделе перечислены функции, которые **будут доступны при релизе web части**
