@@ -7,7 +7,7 @@
 # Структура проекта
 - [SimpleCabinetWebAPI](https://github.com/SimpleCabinet/SimpleCabinetWebAPI) - Основной бэкенд SimpleCabinet. Занимается подключением к базе данных и обработкой всех запросов по HTTP API
 - [SimpleCabinetModule](https://github.com/SimpleCabinet/SimpleCabinetModule) - Модуль для лаунчсервера, предоставляющий SimpleCabinetAuthCoreProvider
-- [SimpleCabinetBukkitPlugin](https://github.com/SimpleCabinet/SimpleCabinetBukkitPlugin) - Плагин Bukkit 1.7 - 1.17+, добавляющий команды `/shop` и `/economy` для получения предметов и торговли
+- [SimpleCabinetIntegrations](https://github.com/SimpleCabinet/SimpleCabinetIntagrations) - Плагин Bukkit 1.7 - 1.17+ и мод Fabric 1.20+, добавляющий команды `/shop` и `/economy` для получения предметов и торговли
 - [SimpleCabinetFrontend2](https://github.com/SimpleCabinet/SimpleCabinetFrontend2) - фронтенд часть SimpleCabinet 2
 - **Все остальные части SimpleCabinet 2 находятся на ранних стадиях разработки**
 # Требования
